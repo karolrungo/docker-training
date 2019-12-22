@@ -2,6 +2,6 @@ sudo: reuired
 services:
   - docker
 before_install:
-  - docker build -t TEST_ME -f Dockerfile.dev .
+  - docker build -t test_me -f Dockerfile.dev .
 script:
-  - docker run -e CI=true TEST_ME npm run test
+  - docker run -e CI=true test_me npm run test
