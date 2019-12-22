@@ -11,13 +11,13 @@ services:
       - .:/app
       - /app/node_modules
     restart: always
-  frontend-UT:
-    image: rungus2/react
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - .:/app
-      - /app/node_modules
-    restart: always
-    command: ["npm", "run", "test"]
+  # frontend-UT:
+    # image: rungus2/react
+    # build:
+      # context: .
+      # dockerfile: Dockerfile.dev
+    # volumes:
+      # - .:/app
+      # - /app/node_modules
+    # restart: always
+    # command: ["npm", "run", "test"]
